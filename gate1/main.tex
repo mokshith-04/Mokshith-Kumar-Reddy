@@ -1,0 +1,206 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{multicol}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{JEE Main 2020 Paper - 4th September 2020 | Shift 1 (Maths)}
+\author{EE24BTECH11009 - Mokshith Kumar Reddy$^{*}$% <-this % stops a space
+}
+\maketitle
+\newpage
+\bigskip
+
+\author{}
+\date{}
+\maketitle
+
+\section*{Questions 1-15}
+
+\begin{enumerate}
+
+\item Let \(y=y(x)\) be the solution of the differential equation, \(xy^\prime-y=x^2(x\cos x+\sin x),x>0\). If \(y(\pi)=\pi\), then \(y'^\prime(\frac{\pi}{2})+y(\frac{\pi}{2})\) is equal to
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item \( 2+\frac{\pi}{2}+\frac{\pi^2}{4} \)
+        \item \( 2+\frac{\pi}{2} \)
+        \item \( 1+\frac{\pi}{2} \)
+        \item \( 
+        1+
+        \frac{\pi}{2}+\frac{\pi^2}{4} \)
+    \end{enumerate}
+    \end{multicols}
+    
+    \item The value of \( \sum_{r=0}^{20} \comb{50-r}{6}\) is equal to:
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item \( \comb{51}{7}-\comb{30}{7} \)
+        \item \( \comb{51}{7}+\comb{30}{7} \)
+        \item \( \comb{50}{7}-\comb{30}{7} \)
+        \item \( \comb{50}{6}-\comb{30}{6} \)
+    \end{enumerate}
+    \end{multicols}
+
+    \item Let \(\lfloor t\rfloor\) denote the greatest integer \(\leq t\). Then the equation in $x$,$[x]^2+2[x+2]-7=0$ has:
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item exactly four integral solutions
+        \item infinitely many solutions
+        \item no integral solution
+        \item exactly two solutions
+    \end{enumerate}
+    \end{multicols}
+
+    \item Let $P\brak{3,3}$ be a point on the hyperbola, $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If the normal to it at $P$ intersects the x-axis at $\brak{9,0}$ and $e$ is its eccentricity, then the ordered pair $\brak{a^2, e^2}$ is equal to:
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\brak{9,3}$
+    \item $\left(\frac{9}{2},2\right)$
+    \item $\left(\frac{9}{2},3\right)$
+    \item $\left(\frac{3}{2},2\right)$
+\end{enumerate}
+\end{multicols}
+\item Let $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ $\brak{a>b}$ be a given ellipse, the length of whose latus rectum is 10. If its eccentricity is the maximum value of the function, $\phi(t)=\frac{5}{12}+t-t^2$, then $a^2 + b^2$ is equal to
+\begin{multicols}{2}
+\begin{enumerate}
+    \item 135
+    \item 116
+    \item 126
+    \item 145
+\end{enumerate}
+\end{multicols}
+\item Let $f(x)=\int\frac{\sqrt{x}}{1+x^2}\,dx$. Then $f(3)-f(1)$ is equal to:
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $-\frac{\pi}{6}+\frac{1}{2}+\frac{\sqrt{3}}{4}$
+    \item $\frac{\pi}{6}+\frac{1}{2}-\frac{\sqrt{3}}{4}$
+    \item $-\frac{\pi}{12}+\frac{1}{2}+\frac{\sqrt{3}}{4}$
+    \item $\frac{\pi}{12}+\frac{1}{2}-\frac{\sqrt{3}}{4}$
+\end{enumerate}
+\end{multicols}
+\item If $1+\brak{1-2^2\cdot1}+\brak{1-4^2\cdot3}+\brak{1-6^2\cdot5}+\cdots+\brak{1-20^2\cdot19}=\alpha-220\beta$, then an ordered pair $\brak{\alpha,\beta}$ is equal to:
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\brak{10, 97}$
+    \item $\brak{11, 103}$
+    \item $\brak{11, 97}$
+    \item $\brak{10,103}$
+\end{enumerate}
+\end{multicols}
+\item The integral $\int\left(\frac{x}{x\sin x+\cos x}\right)^2\,dx$ is equal to (where $C$ is a constant of integration):
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\tan x-\frac{x\sec x}{x\sin x+\cos x}+C$
+    \item $\sec x+\frac{x\tan x}{x\sin x+\cos x}+C$
+    \item $\sec x-\frac{x\tan x}{x\sin x+\cos x}+C$
+    \item $\tan x+\frac{x\sec x}{x \sin x + \cos x}+C$
+\end{enumerate}
+\end{multicols}
+\item Let $f(x)=|x-2|$ and $g(x)=f(f(x))$,$x\in [0, 4]$. Then $\int_0^3 \brak{g(x)-f(x)}\, dx$ is equal to:
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\frac{1}{2}$
+    \item 0
+    \item 1
+    \item $\frac{3}{2}$
+\end{enumerate}
+\end{multicols}
+\item Let $x_0$ be the point of local maxima of $f(x)=\vec{a}\cdot\brak{\vec{b}\times\vec{c}}$, where $\vec{a}=x\hat{i}+2\hat{j}+3\hat{k}$,$\Vec{b}=-2\hat{i}+x\hat{j}-\hat{k}$, and $\vec{c}=7\hat{i}-2\hat{j}+x\hat{k}$. Then the value of $ \vec{a}\cdot\vec{b}+\vec{b}\cdot\vec{c}+\vec{c}\cdot\vec{a}$ at $x=x_0$ is:
+\begin{multicols}{2}
+\begin{enumerate}
+    \item -22
+    \item -4
+    \item -30
+    \item 14
+\end{enumerate}
+\end{multicols}
+\item A triangle $ABC$ lying in the first quadrant has two vertices as $ A(1,2)$ and $B(3,1)$. If $\angle BAC=90^\circ$, and ar$\brak{\triangle ABC}$ is $5\sqrt{5}$, then the abscissa of the vertex $C$ is:
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $1+\sqrt{5}$
+    \item $1+2\sqrt{5}$
+    \item $2\sqrt{5}-1$
+    \item $2+\sqrt{5}$
+\end{enumerate}
+\end{multicols}
+\item Let f be a twice differentiable function on $\brak{1,6}$. If $f(2)=8, f^\prime{}{}(2)=5, f^\prime(x)\geq1$ and $f'^\prime(x)\geq4$, for all $x\in [1,6]$, then:
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $f(5)+f^\prime(5)\geq28$
+    \item $f^\prime(5)+f'^\prime(5)\leq20$
+    \item $f(5)\leq10$
+    \item $f(5)+f^\prime(5)\leq26$
+\end{enumerate}
+\end{multicols}
+\item Let $\alpha$ and $\beta$ be the roots of $x^2-3x+p=0$ and $\gamma$ and $\delta$ be the roots of $x^2-6x+q=0$. If $\alpha,\beta,\gamma,\delta$ form a geometric progression. Then ratio $\brak{2q+p}:\brak{2q-p}$ is:
+\begin{multicols}{2}
+\begin{enumerate}
+    \item 33 :31
+    \item 9 :7
+    \item 3 :1
+    \item 5 :3
+\end{enumerate}
+\end{multicols}
+\item Let $u=\frac{2z+i}{z-ki},z=x+iy$ and $k>0$. If the curve represented by $Re(u)+Im(u)=1$ intersects the y-axis at the points P and Q where PQ=5, then the value of k is:
+\begin{multicols}{2}
+\begin{enumerate}
+    \item 4
+    \item $\frac{1}{2}$
+    \item 2
+    \item $\frac{3}{2}$
+\end{enumerate}
+\end{multicols}
+\item If $A=\myvec{\cos\theta&i\sin\theta\\i\sin\theta&\cos\theta},\left(\theta=\frac{\pi}{24}\right)$ and $A^5=\myvec{a&b\\c&d}$,where $i=\sqrt{-1}$,then which one of the following is not true?
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $a^2-d^2=0$
+    \item $a^2-c^2=1$
+    \item $0\leq a^2+b^2\leq1$
+    \item $a^2-b^2=\frac{1}{2}$
+\end{enumerate}
+\end{multicols}
+\end{enumerate}
+\end{document}
