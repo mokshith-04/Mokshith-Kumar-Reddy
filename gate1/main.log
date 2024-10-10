@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.8)  9 OCT 2024 22:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.8)  10 OCT 2024 09:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,7 +22,6 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-** ATTENTION: Single column mode is not typically used with IEEE publications.
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen143
@@ -1323,7 +1322,7 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24> not available
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
 (Font)              Font shape `OT1/txr/bx/it' tried instead on input line 44.
 
--- Lines per column: 50 (exact).
+-- Lines per column: 32 (exact).
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count359
@@ -1395,8 +1394,8 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 (/usr/local/texlive/2024/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 ) [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr
-/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3] (./main.au
-x)
+/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3] [4] (./mai
+n.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1405,9 +1404,9 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30419 strings out of 474116
- 597270 string characters out of 5743683
- 1959187 words of memory out of 5000000
+ 30420 strings out of 474116
+ 597276 string characters out of 5743683
+ 1952187 words of memory out of 5000000
  52047 multiletter control sequences out of 15000+600000
  626390 words of font info for 182 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1420,10 +1419,10 @@ texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2024/texmf-
 dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 61372 bytes).
+Output written on main.pdf (4 pages, 62527 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
- 79 named destinations out of 1000 (max. 500000)
+ 162 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
+ 80 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
