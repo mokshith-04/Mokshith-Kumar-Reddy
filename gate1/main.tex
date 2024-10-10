@@ -1,6 +1,14 @@
-\let\negmedspace\undefined
-\let\negthickspace\undefined
-\documentclass[journal,12pt,onecolumn,draftclsnofoot]{IEEEtran}
+%iffalse
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
 \usepackage{algorithmic}
@@ -16,7 +24,7 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} 
 \usepackage{listings}
-\usepackage{gvv}                                        
+% \usepackage{gvv}                                        
 \def\inputGnumericTable{}                                 
 \usepackage[latin1]{inputenc}                                
 \usepackage{color}                                            
@@ -27,31 +35,18 @@
 \usepackage{hhline}                                           
 \usepackage{ifthen}                                           
 \usepackage{lscape}
-\usepackage{multicol}
-
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{problem}{Problem}
-\newtheorem{proposition}{Proposition}[section]
-\newtheorem{lemma}{Lemma}[section]
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{example}{Example}[section]
-\newtheorem{definition}[problem]{Definition}
-\newcommand{\BEQA}{\begin{eqnarray}}
-\newcommand{\EEQA}{\end{eqnarray}}
-\newcommand{\define}{\stackrel{\triangle}{=}}
-\theoremstyle{remark}
-\newtheorem{rem}{Remark}
 \begin{document}
-
-
 \bibliographystyle{IEEEtran}
-\vspace{3cm}
-
 \title{JEE Main 2020 Paper - 4th September 2020 | Shift 1 (Maths)}
-\author{EE24BTECH11009 - Mokshith Kumar Reddy$^{*}$% <-this % stops a space
-}
-\maketitle
-\bigskip
+\author{EE24BTECH11016-Mokshith}
+{\let\newpage\relax\maketitle}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
 \begin{enumerate}
 
 \item Let $y=y\brak{x}$ be the solution of the differential equation, $xy^\prime-y=x^2\brak{x\cos x+\sin x},x>0$. If $y\brak{\pi}=\pi$, then $y'^\prime\brak{\frac{\pi}{2}}+y\brak{\frac{\pi}{2}}$ is equal to
@@ -78,9 +73,9 @@
 \item Let $\vec{P}\brak{3,3}$ be a point on the hyperbola, $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$. If the normal to it at $\vec{P}$ intersects the x-axis at $\brak{9,0}$ and $e$ is its eccentricity, then the ordered pair $\brak{a^2, e^2}$ is equal to:
 \begin{enumerate}
     \item $\brak{9,3}$
-    \item $\left(\frac{9}{2},2\right)$
-    \item $\left(\frac{9}{2},3\right)$
-    \item $\left(\frac{3}{2},2\right)$
+    \item $\brak{\frac{9}{2},2}$
+    \item $\brak{\frac{9}{2},3}$
+    \item $\brak{\frac{3}{2},2}$
 \end{enumerate}
 \item Let $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ $\brak{a>b}$ be a given ellipse, the length of whose latus rectum is 10. If its eccentricity is the maximum value of the function, $\phi\brak{t}=\frac{5}{12}+t-t^2$, then $a^2 + b^2$ is equal to
 \begin{enumerate}
@@ -89,7 +84,7 @@
     \item 126
     \item 145
 \end{enumerate}
-\item Let $f\brak{x}=\int\frac{\sqrt{x}}{\brak{1+x}^2}\, dx$. Then $f\brak{3}-f\brak{1}$ is equal to:
+\item Let $f\brak{x}=\int\frac{\sqrt{x}}{\brak{1+x}^2} dx$. Then $f\brak{3}-f\brak{1}$ is equal to:
 \begin{enumerate}
     \item $-\frac{\pi}{6}+\frac{1}{2}+\frac{\sqrt{3}}{4}$
     \item $\frac{\pi}{6}+\frac{1}{2}-\frac{\sqrt{3}}{4}$
@@ -103,14 +98,14 @@
     \item $\brak{11, 97}$
     \item $\brak{10,103}$
 \end{enumerate}
-\item The integral $\int\left(\frac{x}{x\sin x+\cos x}\right)^2\,dx$ is equal to (where $C$ is a constant of integration):
+\item The integral $\int\brak{\frac{x}{x\sin x+\cos x}}^2 dx$ is equal to (where $C$ is a constant of integration):
 \begin{enumerate}
     \item $\tan x-\frac{x\sec x}{x\sin x+\cos x}+C$
     \item $\sec x+\frac{x\tan x}{x\sin x+\cos x}+C$
     \item $\sec x-\frac{x\tan x}{x\sin x+\cos x}+C$
     \item $\tan x+\frac{x\sec x}{x \sin x + \cos x}+C$
 \end{enumerate}
-\item Let $f\brak{x}=\abs{x-2}$ and $g\brak{x}=f\brak{f\brak{x}}$,$x\in \sbrak{0, 4}$. Then $\int_0^3 \brak{g\brak{x}-f\brak{x}}\, dx$ is equal to:
+\item Let $f\brak{x}=\abs{x-2}$ and $g\brak{x}=f\brak{f\brak{x}}$,$x\in \sbrak{0, 4}$. Then $\int_0^3 \brak{g\brak{x}-f\brak{x}} dx$ is equal to:
 \begin{enumerate}
     \item $\frac{1}{2}$
     \item 0
@@ -131,7 +126,7 @@
     \item $2\sqrt{5}-1$
     \item $2+\sqrt{5}$
 \end{enumerate}
-\item Let f be a twice differentiable function on $\brak{1,6}$. If $f\brak{2}=8, f^\prime\brak{2}=5, f^\prime\brak{x}\geq1$ and $f'^\prime\brak{x}\geq4$, for all $x\in \sbrak{1,6}$, then:
+\item Let $f$ be a twice differentiable function on $\brak{1,6}$. If $f\brak{2}=8, f^\prime\brak{2}=5, f^\prime\brak{x}\geq1$ and $f'^\prime\brak{x}\geq4$, for all $x\in \sbrak{1,6}$, then:
 \begin{enumerate}
     \item $f\brak{5}+f^\prime\brak{5}\geq28$
     \item $f^\prime\brak{5}+f'^\prime\brak{5}\leq20$
