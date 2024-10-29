@@ -1,0 +1,334 @@
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usetikzlibrary{patterns}
+\begin{document}
+\bibliographystyle{IEEEtran}
+\title{2017-AE-'53-65'}
+\author{EE24BTECH11009-Mokshith}
+{\let\newpage\relax\maketitle}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi
+}
+\begin{enumerate}[start=53]
+\item The maximum normal stress in $MN/m^2$ for the thin walled beam of square cross section of outer dimension $120 mm \times 120 mm$ and wall thickness $1 mm$ under the action of moment $M_o=96 Nm$ as shown in the figure is \rule{2cm}{0.15mm} (in three decimal places).
+\begin{figure}[H]
+\centering
+\resizebox{4cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw (1.5,9.25) to[short] (6.25,9.25);
+\draw (4,11.75) to[short] (4,6.75);
+\draw [ line width=1.5pt](2.25,10.75) to[short] (5.75,10.75);
+\draw [ line width=1.5pt](5.75,10.75) to[short] (5.75,7.75);
+\draw [ line width=1.5pt](2.25,10.75) to[short] (2.25,7.75);
+\draw [ line width=1.5pt](2.25,7.75) to[short] (5.75,7.75);
+\draw [line width=0.5pt, dashed] (3.75,9) -- (4.75,10);
+\draw [line width=1.5pt, ->, >=Stealth] (4.5,9.75) -- (6.25,11.25);
+\draw [->, >=Stealth] (5.25,9.25) .. controls (5.5,10) and (5.25,10) .. (4.75,10) ;
+\node [font=\normalsize] at (5.25,9.5) {$45\degree$};
+\node [font=\normalsize] at (3.5,11.5) {$y$};
+\node [font=\normalsize] at (6.5,9) {$x$};
+\node [font=\large] at (7.25,10.75) {$M_o=96 Nm$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\item The idealized cross section of a thin-walled wing box structure shown in the figure is subjected to an anticlockwise torque of 10 kNm. The corresponding shear-flow distribution under this loading condition is shown in the figure. The area of each cell is A$_1$ = 300$\times$10$^3$mm$^2$ and A$_2$ = 250$\times$10$^3$mm$^2$. The ratio of the unknowns $\frac{x}{y}$ is given by \rule{2cm}{0.15mm} (in three decimal places).
+\begin{figure}[H]
+\centering
+\resizebox{4cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [short] (1,11) -- (6,11);
+\draw [short] (1,11) -- (1,8.75);
+\draw [short] (1,8.75) -- (6,8.75);
+\draw [short] (6,8.75) -- (6,11);
+\draw [short] (4,8.75) -- (4,11);
+\draw [->, >=Stealth] (3,11.5) -- (1.75,11.5)node[pos=0.5, fill=white]{5 N/mm};
+\draw [->, >=Stealth] (0.5,10.75) -- (0.5,9.25);
+\draw [->, >=Stealth] (1.75,8.5) -- (3.5,8.5);
+\draw [->, >=Stealth] (4.75,8.5) -- (5.75,8.5);
+\draw [->, >=Stealth] (6.25,9.25) -- (6.25,10.5);
+\draw [->, >=Stealth] (3.75,10.5) -- (3.75,9.25);
+\draw [->, >=Stealth] (4.75,12.25) .. controls (4,13.25) and (3.75,13.25) .. (3,12.25) ;
+\node [font=\large] at (2.5,9.75) {$A_1$};
+\node [font=\large] at (5,9.75) {$A_2$};
+\node [font=\normalsize] at (3.5,10) {$x$};
+\draw [->, >=Stealth] (3.25,11.25) -- (1.25,11.25);
+\draw [->, >=Stealth] (5.75,11.25) -- (4.25,11.25);
+\node [font=\normalsize] at (5,11.5) {y};
+\node [font=\normalsize] at (0,10.25) {5 N/mm};
+\node [font=\normalsize] at (2.5,8.25) {5 N/mm};
+\node [font=\normalsize] at (6.5,10) {y};
+\node [font=\normalsize] at (5.25,8.25) {y};
+\node [font=\normalsize] at (4,13.25) {10 kNm};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+\item The natural frequency of the system suspended by two identical springs of stiffness $k$ as shown in the figure is given by $\omega_n=a\sqrt{\frac{k}{m}}$ for small displacement. Both the springs make an angle of 45$^\circ$ with the horizontal. The value of $a$ is \rule{2cm}{0.15mm} (in two decimal places).
+
+\begin{center}
+\begin{tikzpicture}[
+    decoration={
+        coil,
+        aspect=0.3,
+        segment length=3.5mm,
+        amplitude=3mm
+    }
+]
+    % Draw the ceiling (horizontal bar)
+    \fill[gray!30] (-3,2) rectangle (3,2.5);
+    
+    % Draw attachment points
+    \fill (-1.5,2) circle (2pt);
+    \fill (1.5,2) circle (2pt);
+    
+    % Draw springs with zigzag pattern
+    \draw (-1.5,2) to[R](-0.7,0.7);
+    \draw (1.5,2) to[R](0.7,0.7);
+    
+    % Draw the connection to mass
+    \draw[thick] (-0.7,0.7) -- (0,0);
+    \draw[thick] (0.7,0.7) -- (0,0);
+    
+    % Draw the mass
+    \draw[thick] (-0.5,-0.1) rectangle (0.5,-1.1);
+    \node at (0,-0.6) {m};
+    
+    % Draw the spring constants
+    \node at (-1.7,1.3) {$k$};
+    \node at (1.7,1.3) {$k$};
+    
+    % Draw the angle markings and horizontal reference line
+    \draw[dashed] (-1.5,0.7) -- (1.5,0.7);
+    \draw[-] (-0.7,0.7) -- (-1,0.7);
+    \draw[-] (0.7,0.7) -- (1,0.7);
+    
+    % Add angle labels
+    \node at (-1.25,0.9) {45°};
+    \node at (1.25,0.9) {45°};
+    
+    % Draw small angle arcs
+    \draw (0.7,0.7) arc (180:225:0.3);
+    \draw (-0.7,0.7) arc (0:-45:0.3);
+    
+\end{tikzpicture}
+\end{center}
+\item The ninth and the tenth of this month are Monday and Tuesday \rule{2cm}{0.15mm}.
+\begin{enumerate}
+    \item figuratively
+    \item retrospectively
+    \item respectively
+    \item rightfully
+\end{enumerate}
+\item It is \rule{2cm}{0.15mm} to read this year's textbook\rule{2cm}{0.15mm} the last year's.
+\begin{enumerate}
+    \item easier, than
+    \item most easy, than
+    \item easier, from
+    \item easiest, from
+\end{enumerate}
+    \item A rule states that in order to drink beer, one must be over 18 years old. In a bar, there are 4 people. P is 16 years old. Q is 25 years old. R is drinking milkshake and S is drinking a beer. What must be checked to ensure that the rule is being followed?
+\begin{enumerate}
+   \item Only P's drink
+  \item Only P's drink and S's age
+  \item Only S's age
+  \item Only P's drink, Q's drink and S's age  \end{enumerate}
+\item Fatima starts from point $P$, goes North for $3 km$, and then East for $4 km$ to reach point $Q$. She then turns to face point $P$ and goes $15 km$ in that direction. She then goes North for $6 km$. How far is she from point P, and in which direction should she go to reach point P?
+    \begin{enumerate}
+        \item 8 km East
+       \item 12 km North
+        \item 6 km East
+        \item 10 km North
+\end{enumerate}
+\item $500$ students are taking one or more courses out of Chemistry, Physics, and Mathematics.
+Registration records indicate course enrolment as follows: Chemistry $\brak{329}$. Physics $\brak{186}$.
+Mathematics \brak{295}. Chemistry and Physics \brak{83}. Chemistry and Mathematics \brak{217}. and Physics and Mathematics \brak{63}. How many students are taking all $3$ subjects?
+\begin{enumerate}
+    \item 37
+    \item 43
+    \item 47
+    \item 53
+\end{enumerate}
+\item "If you are looking for a history of India, or for an account of the rise and fall of the British Raj. or for the reason of the cleaving of the subcontinent into two mutually antagonistic parts and the effects this mutilation will have in the respective sections, and ultimately on Asia, you will not find it in these pages; for though I have spent a lifetime in the country. I lived too near the seat of events, and was too intimately associated with the actors, to get the perspective needed for the impartial recording of these matters."\\
+Which of the following statements best reflects the author's opinion?
+\begin{enumerate}
+    \item An intimate association does not allow for the necessary perspective.
+    \item Matters are recorded with an impartial perspective.
+    \item An intimate association offers an impartial perspective.
+    \item Actors are typically associated with the impartial recording of matters.
+\end{enumerate}
+\item Each of P, Q, R, S, W, X, Y and Z has been married at most once. X and Y are married and have two children P and Q. Z is the grandfather of the daughter S of P. Further, Z and W are married and are parents of R. Which one of the following must necessarily be FALSE?
+\begin{enumerate}
+    \item X is the mother-in-law of R
+    \item P and R are not married to each other
+    \item Pis a son of X and Y
+    \item Q cannot be married to R
+\end{enumerate}
+\item 1200 men and 500 women can build a bridge in 2 weeks. 900 men and 250 women will take 3 weeks to build the same bridge. How many men will be needed to build the bridge in one week?
+\begin{enumerate}
+    \item 3000
+    \item 3300
+    \item 3600
+    \item 3900
+\end{enumerate}
+\item The number of 3-digit numbers such that the digit 1 is never to the immediate right of 2 is
+\begin{enumerate}
+    \item 781
+    \item 791
+    \item 881
+    \item 891
+\end{enumerate}
+\item A contour line joins locations having the same height above the mean sea level. The following is a contour plot of a geographical region. Contour lines are shown at 25 m intervals in this plot.
+\begin{figure}[H]
+\centering
+\resizebox{4cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw [short] (0.5,9.5) -- (6.25,9.5);
+\draw [short] (0.5,9.5) -- (0.5,6.25);
+\draw [short] (0.5,6.25) -- (6.25,6.25);
+\draw [short] (6.25,9.5) -- (6.25,6.25);
+\draw [short] (1,9) .. controls (1.5,9.25) and (1.5,9.25) .. (2,9.5);
+\draw [short] (1.25,8.75) .. controls (2.25,9.75) and (2.75,9.25) .. (3.5,9.5);
+\draw [short] (0.5,8.25) -- (0.75,8.5);
+\draw [short] (0.5,8.75) -- (0.75,8.75);
+\draw [short] (0.5,8) .. controls (1.5,9) and (5,9) .. (4.25,9.5);
+\draw [short] (1,8) .. controls (1.25,8.75) and (1.5,8.5) .. (2.75,8.75);
+\draw [short] (2.75,8.75) .. controls (3.75,9.5) and (3.75,8) .. (4,7);
+\draw [short] (4,7) -- (2.25,6.5);
+\draw [short] (1.5,6.75) .. controls (1.25,7.25) and (0.75,7) .. (1,8);
+\node [font=\small] at (1.75,6.5) {500};
+\draw [short] (3,8.5) .. controls (2.25,8) and (2,8.25) .. (1.25,8);
+\draw [short] (1.25,8) .. controls (0.75,7.5) and (1.5,7.5) .. (1.5,7);
+\draw [short] (1.5,7) .. controls (2,6.75) and (2,7) .. (2.25,6.75);
+\draw [short] (2.75,7) .. controls (3.5,7) and (3.25,7.5) .. (3.5,7.5);
+\draw [short] (3.5,7.5) .. controls (3.75,8) and (3.5,8) .. (3.25,8.25);
+\draw [short] (3.25,8.25) -- (3,8.5);
+\node [font=\small] at (2.5,6.75) {550};
+\node [font=\small] at (2.5,6.75) {};
+\draw [short] (1.5,7.75) .. controls (2.25,7.75) and (1.75,8.25) .. (2.75,8);
+\draw [short] (2.75,8) .. controls (2.75,8) and (3.25,8) .. (3,7.5);
+\draw [short] (1.5,7.75) .. controls (1.25,7.75) and (1.5,7.25) .. (1.75,7.25);
+\draw [short] (2.25,7.25) .. controls (2.75,7.5) and (3,7.25) .. (3,7.5);
+\node [font=\small] at (2,7.25) {575};
+\draw [short] (0.5,7.25) .. controls (0.75,6.25) and (0.75,6.75) .. (1.5,6.25);
+\draw [short] (3.5,6.25) .. controls (4.5,6.25) and (3.75,6.75) .. (4.75,6.75);
+\draw [short] (5.25,7) .. controls (6,6.75) and (5.5,7.5) .. (6.25,7.5);
+\draw [short] (6.25,8) .. controls (5.75,7.5) and (5.75,7.25) .. (5,7.5);
+\draw [short] (4.5,7.75) -- (3.75,8.75);
+\draw [short] (3.75,8.75) .. controls (4.25,9.5) and (4.5,9.25) .. (5.25,9.5);
+\draw [short] (6,9.5) .. controls (5.25,9.25) and (4.5,9.5) .. (4.25,8.75);
+\draw [short] (4.5,8.25) .. controls (5,8) and (5,7.75) .. (5.25,8);
+\draw [short] (5.25,8) .. controls (6,8) and (6,8.25) .. (6.25,8.5);
+\draw [short] (5.75,9) .. controls (5.5,9.25) and (5.25,9) .. (5,8.75);
+\draw [short] (5,8.75) .. controls (4.75,8.5) and (5.25,8.5) .. (5.25,8.25);
+\draw [short] (5.25,8.25) .. controls (5.5,8.25) and (5.75,8.25) .. (5.75,8.5);
+\node [font=\small] at (4.5,8.5) {550};
+\node [font=\small] at (5,7) {475};
+\node [font=\small] at (5.75,8.75) {575};
+\node [font=\small] at (4.75,7.5) {500};
+\node [font=\Huge, color={rgb,255:red,255; green,64; blue,19}] at (0.75,7.75) {.};
+\node [font=\Huge, color={rgb,255:red,255; green,64; blue,19}] at (1.75,7.75) {.};
+\node [font=\Huge, color={rgb,255:red,217; green,80; blue,0}] at (1.75,9) {.};
+\node [font=\Huge, color={rgb,255:red,255; green,64; blue,19}] at (3.75,7.75) {.};
+\node [font=\Huge, color={rgb,255:red,227; green,36; blue,0}] at (1.75,7) {.};
+\node [font=\normalsize] at (2,9) {};
+\node [font=\normalsize] at (0.5,7.5) {Q};
+\node [font=\normalsize] at (1.5,7) {};
+\node [font=\normalsize] at (3.75,7.25) {S};
+\node [font=\normalsize] at (2,7.5) {P};
+\node [font=\normalsize] at (1.5,7) {T};
+\node [font=\normalsize] at (2,9) {R};
+\draw [ color={rgb,255:red,150; green,211; blue,95}, ->, >=Stealth] (2.25,7.5) -- (3.75,7.5);
+\draw [ color={rgb,255:red,150; green,211; blue,95}, ->, >=Stealth] (1.75,7.75) -- (1.75,8.5);
+\draw [ color={rgb,255:red,150; green,211; blue,95}, ->, >=Stealth] (1.5,7.5) -- (1,7.5);
+\draw [ color={rgb,255:red,150; green,211; blue,95}, ->, >=Stealth] (1.75,7.5) -- (1.75,7);
+\draw [ color={rgb,255:red,150; green,211; blue,95}, ->, >=Stealth] (1.75,7.5) -- (3.75,7.5);
+\draw [ color={rgb,255:red,150; green,211; blue,95}, ->, >=Stealth] (1.75,7.5) -- (3.75,7.5);
+\node [font=\small] at (0.75,9) {425};
+\node [font=\normalsize] at (0.75,8.75) {};
+\node [font=\small] at (1,8.5) {450};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+Which of the following is the steepest path leaving from P?
+\begin{enumerate}
+    \item P to Q
+    \item P to R
+    \item P to S
+    \item P to T
+\end{enumerate}
+\end{enumerate}
+\end{document}
+To add a resistor between two points in a TikZ diagram, you can use the `circuitikz` package, which is designed for drawing electrical circuits. Below is a simple example of how to include a resistor between two points using TikZ:
+
+```latex
+\documentclass{standalone}
+\usepackage{circuitikz}
+
+\begin{document}
+\begin{circuitikz}
+    % Draw two points
+    \draw (0,0) node[anchor=east] {A} -- (1,0) node[anchor=west] {B};
+
+    % Add a resistor between point A and B
+    \draw (0.5,0) to[R, l=R] (0.5,0.5);
+    
+    % Connect points A and B with the resistor
+    \draw (0,0.5) -- (0.5,0.5);
+    \draw (0.5,0) -- (1,0);
+\end{circuitikz}
+\end{document}
+```
+
+### Explanation:
+- `\usepackage{circuitikz}` imports the `circuitikz` package.
+- The `to[R, l=R]` command creates a resistor, where `l=R` labels it as "R".
+- The coordinates `(0,0)` and `(1,0)` define the start and end points of the connection, and the resistor is drawn in the middle.
+
+Make sure to compile this code with a LaTeX engine that supports TikZ, like `pdflatex`. You can adjust the positions and labels according to your needs!
+
