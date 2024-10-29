@@ -47,7 +47,7 @@
 \numberwithin{figure}{enumi}
 \renewcommand{\thetable}{\theenumi
 }
-\textbf{Common Data for Questions 19 and 20:}
+Common Data for Questions 19 and 20:\\
 A boat is propelled in still water at a velocity of $5m/s$ by taking water at the rate of $1m^3/s$ from the aft side and discharging it through the stern using a pump, as shown in the figure below. The velocity of the discharge jet relative to the boat is $9m/s$. The effect of pressure at the intake and discharge can be neglected. The density of water may be taken as $1000kg/m^3$.
 \begin{figure}[H]
 \centering
@@ -95,27 +95,20 @@ A boat is propelled in still water at a velocity of $5m/s$ by taking water at th
     \item 28
     \item 81
 \end{enumerate}
-\textbf{Linked Answer Questions}\\
-\textbf{Statement for Linked Answer Questions :}
+\section*{Linked Answer Questions}
+Statement for Linked Answer Questions :\\
 The hydrodynamic boundary layer over a flat plate is shown in the figure below. The velocity in the $x$-direction is approximated as $u = a + by + cy^2$, where $a$, $b$ and $c$ are constants. $U$ is the free stream velocity and $\delta$ is the boundary-layer thickness at any point $x$ on the plate.
 \begin{tikzpicture}[scale=1.2, thick]
-    % Coordinate system arrows
     \draw[->] (-0.5,0) -- (8,0) node[right] {$x$};
     \draw[->] (0,-0.2) -- (0,2) node[above] {$y$};
-    
-    % Flat plate with hatching - increased pattern thickness
     \draw[pattern=north west lines, pattern color=black, line width=1.2pt] (0.15,-0.15) -- (8,-0.15);
     \draw[pattern=north west lines, pattern color=black, line width=1.2pt] (0,0) -- (0.15,-0.15);
-    % Boundary layer curve - extra thick
     \draw[line width=1.5pt] plot[domain=0:8, smooth] (\x,{0.5*\x^0.5});
-    
-    % Incoming flow arrows (U) - thicker arrows
     \foreach \y in {0.25,0.75,1.25,1.75}
     {
         \draw[->, line width=1.2pt] (-1.5,\y) -- (-0.5,\y);
     }
     \node[left] at (-1,2) {$U$};
-    % Delta(x) height indicator - thicker arrow
     \draw[<->, line width=1.2pt] (6,0) -- (6,1.22474487) node[midway,right] {$\delta(x)$};
 \end{tikzpicture}
 \item The dimensionless velocity profile is
