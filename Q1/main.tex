@@ -1,72 +1,35 @@
-\let\negmedspace\undefined
-\let\negthickspace\undefined
-\documentclass[journal]{IEEEtran}
-\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
-%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
-\usepackage{tfrupee} % Include tfrupee package
+\documentclass{beamer}
+\usetheme{Madrid}
 
-\setlength{\headheight}{1cm} % Set the height of the header box
-\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
-
-\usepackage{gvv-book}
-\usepackage{gvv}
-\usepackage{cite}
-\usepackage{amsmath,amssymb,amsfonts,amsthm}
-\usepackage{algorithmic}
+\usepackage{amsmath, amssymb, amsthm}
 \usepackage{graphicx}
-\usepackage{textcomp}
-\usepackage{xcolor}
-\usepackage{txfonts}
 \usepackage{listings}
-\usepackage{enumitem}
-\usepackage{mathtools}
 \usepackage{gensymb}
-\usepackage{comment}
-\usepackage[breaklinks=true]{hyperref}
-\usepackage{tkz-euclide} 
-\usepackage{listings}
-% \usepackage{gvv}                                        
-\def\inputGnumericTable{}                                 
-\usepackage[latin1]{inputenc}                                
-\usepackage{color}                                            
-\usepackage{array}                                            
-\usepackage{longtable}                                       
-\usepackage{calc}                                             
-\usepackage{multirow}                                         
-\usepackage{hhline}                                           
-\usepackage{ifthen}                                           
-\usepackage{lscape}
-\usepackage{amsmath}
-\setlength{\parindent}{0pt}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{gvv}
+
 \begin{document}
 
-\bibliographystyle{IEEEtran}
-\vspace{3cm}
-
-\title{1-1.4-9c}
-\author{EE24BTECH11009 - Mokshith Kumar Reddy}
-% \maketitle
-% \newpage
-% \bigskip
-{\let\newpage\relax\maketitle}
-
-\renewcommand{\thefigure}{\theenumi}
-\renewcommand{\thetable}{\theenumi}
-\setlength{\intextsep}{10pt} % Space between text and floats
-
-
-\numberwithin{equation}{enumi}
-\numberwithin{figure}{enumi}
-\renewcommand{\thetable}{\theenumi}
-Question:\\
- In what ratio does the point \brak{-4,6} divide the line segment joining the points $\vec{A}$\brak{-6,0} and $\vec{B}$\brak{3,-8}?\\
-\solution\\
+\title{matgeo: 1.4-9c}
+\author{EE24BTECH11009 - Mokshith Kumar}
+}
+\frame{\titlepage}
+\begin{frame}
+\frametitle{Question}
+ In what ratio does the point \brak{-4,6} divide the line segment joining the points $\vec{A}$\brak{-6,0} and $\vec{B}$\brak{3,-8}?\hfill{1.4-9c}
+ \end{frame}
+\begin{frame}
+\frametitle{Plot}
 \begin{figure}[h!]
    \centering
    \includegraphics[width=0.7\linewidth]{figs/plot.png}
    \caption{ }
    \label{stemplot}
 \end{figure}\\
+\end{frame}
+\begin{frame}
+\frametitle{Solution}
 \figref{stemplot} we can see that the given point doesn't lie on the line segment joining A and B.\\
 \begin{align}
 d_1&=\left\|{(A-C)}\right\|\\
@@ -93,10 +56,14 @@ d_2&=\left\|{(B-C)}\right\|\\
 \implies d_2&=7\sqrt{5}\\
 \therefore \frac{d_1}{d_2} &= \frac{\sqrt{40}}{7\sqrt{5}}
 \end{align}
+\end{frame}
+\begin{frame}
+\frametitle{Table}
 \begin{table}[h]
     \centering
     \input{tables/tables.tex}
     \caption{Parameter Table}
     \label{tab.1}
 \end{table}
+\end{frame}
 \end{document}
