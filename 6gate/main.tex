@@ -1,0 +1,118 @@
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usetikzlibrary{patterns}
+\begin{document}
+\bibliographystyle{IEEEtran}
+\title{2021-XE-'14-26'}
+\author{EE24BTECH11009-Mokshith}
+{\let\newpage\relax\maketitle}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi
+}
+\begin{enumerate}[start=4]
+\item Let $f\brak{x}$ be a non-negative continuous function of real variable $x$. If the area under the curve $y = f\brak{x}$ from $x = 0$ to $x = a$ is $\frac{a^2}{2} + \frac{\pi}{2}\sin a + \frac{\pi}{2}\cos a - \frac{\pi}{2}$, then the value of $f\brak{\frac{\pi}{2}}$ is \underline{\hspace{1cm}}\brak{\text{round off to one decimal place}}.
+
+\item If the numerical approximation of the value of the integral $\int_0^4 2^{\alpha x} dx$ using the Trapezoidal rule with two sub intervals is 9, then the value of the real constant $\alpha$ is \underline{\hspace{1cm}}\brak{\text{round off to one decimal place}}.
+\item Let the transformation $y\brak{x} = e^x v\brak{x}$ reduce the ordinary differential equation
+$$x\frac{d^2y}{dx^2} + 2\brak{1-x}\frac{dy}{dx} + \brak{x-2}y = 0; \quad x > 0$$
+to
+$$\alpha x\frac{d^2v}{dx^2} + \beta\frac{dv}{dx} + \gamma v = 0,$$
+where $\alpha$, $\beta$, $\gamma$ are real constants. Then, the arithmetic mean of $\alpha$, $\beta$, $\gamma$ is \underline{\hspace{1cm}}\brak{\text{round off to three decimal places}}.
+\item A person, who speaks the truth 3 out of 4 times, throws a fair dice with six faces and informs that the outcome is 5. The probability that the outcome is really 5 \underline{\hspace{1cm}}\brak{\text{round off to three decimal places}}.
+\item Let $f\brak{x,y} = x^4 + y^4 - 2x^2 + 4xy - 2y^2 + \alpha$ be a real valued function. Then, which one of the following statements is TRUE for all $\alpha$?
+\begin{enumerate}
+    \item $\brak{0,0}$ is not a stationary point of $f$
+    \item $f$ has a local maxima at $\brak{0,0}$
+    \item $f$ has a local minima at $\brak{0,0}$
+    \item $f$ has a saddle point at $\brak{0,0}$
+\end{enumerate}
+\item Let $u\brak{x,y} = \brak{x^2 - y^2}v\brak{x,y}$ be such that both $u\brak{x,y}$ and $v\brak{x,y}$ satisfy the Laplace equation in a domain $\Omega$ of the $xy$-plane. Then, which one of the following is TRUE in $\Omega$?
+\begin{enumerate}
+    \item $x\frac{\partial v}{\partial x} - y\frac{\partial v}{\partial y} = 0$
+    \item $x\frac{\partial v}{\partial x} + y\frac{\partial v}{\partial y} = 0$
+    \item $x\frac{\partial v}{\partial y} - y\frac{\partial v}{\partial x} = 0$
+    \item $x\frac{\partial v}{\partial y} + y\frac{\partial v}{\partial x} = 0$
+\end{enumerate}
+\item Let $I$ denote the identity matrix of order 7, and $A$ be a $7 \times 7$ real matrix having characteristic polynomial $C_A\brak{\lambda} = \lambda^2\brak{\lambda - 1}^\alpha\brak{\lambda + 2}^\beta$, where $\alpha$ and $\beta$ are positive integers. If $A$ is diagonalizable and $rank\brak{A} = rank\brak{A + 2I}$, then $rank\brak{A - I}$ is \underline{\hspace{1cm}}\brak{\text{in integer}}.
+\item Let $C_1$ be the line segment from $\brak{0,1}$ to $\brak{\frac{4}{5}, \frac{3}{5}}$, and let $C_2$ be the arc of the circle $x^2 + y^2 = 1$ from $\brak{0,1}$ to $\brak{\frac{4}{5}, \frac{3}{5}}$. If
+$$\alpha = \int_{C_1} \brak{\frac{2x}{y}i + \frac{1-x^2}{y^2}j} \cdot dr \text{ and } \beta = \int_{C_2} \brak{\frac{2x}{y}i + \frac{1-x^2}{y^2}j} \cdot dr,$$
+where $r = xi + yj$, then the value of $\alpha^2 + \beta^2$ is \underline{\hspace{1cm}}\brak{\text{round off to two decimal places}}.
+\end{enumerate}
+\section*{Fluid Mechanics (XE-B)}
+\begin{enumerate}[start=1]
+\item The general relationship between shear stress, $\tau$, and the velocity gradient $\brak{du/dy}$ for a fluid is given by $\tau = k\brak{du/dy}^n$, where $k$ is a constant with appropriate units. The fluid is Newtonian if
+\begin{enumerate}
+    \item $n > 1$
+    \item $n < 1$
+    \item $n = 1$
+    \item $n = 0$
+\end{enumerate}
+\item Which one of the following options is TRUE?
+\begin{enumerate}
+    \item Pathlines and streaklines are the same in an unsteady flow, and streamlines are tangential to the local fluid velocity at a point.
+    \item Streamlines are perpendicular to the local fluid velocity at a point, and streamlines and streaklines are the same in a steady flow.
+    \item Pathlines and streaklines are the same in an unsteady flow, and streamlines and streaklines are the same in a steady flow.
+    \item Streamlines are tangential to the local fluid velocity at a point, and streamlines and streaklines are the same in a steady flow.
+    \end{enumerate}
+\item If $P_m = 1.2 Pa$ and $P_{out} =1.0 Pa$ are the average pressures at inlet and outlet
+respectively for a fully-developed flow inside a channel having a height of $50 cm$, then the absolute value of average shear stress $\brak{in Pa}$ acting on the walls of the channel of length 5 m is
+\begin{enumerate}
+    \item 0.005
+    \item 0.02
+    \item 0.01
+    \item 0.05
+\end{enumerate}
+\item Consider the fully-developed flow of a Newtonian fluid \brak{\text{density $\rho$; viscosity $\mu$}} through a smooth pipe of diameter $D$ and length $L$. The average velocity of the flow is $V$. If the length of the pipe is doubled, keeping $V,D,\rho,\mu$ constant, the friction factor
+\begin{enumerate}
+   \item increases by two times
+   \item remains the same  
+   \item decreases by two times
+   \item increases by four times
+\end{enumerate}
+\item The absolute value of pressure difference between the inside and outside of a spherical soap bubble of radius, $R$, and surface tension, $\gamma$, is:
+\begin{enumerate}
+   \item $\frac{2\gamma}{R}$
+   \item $\frac{\gamma}{R}$
+   \item $\frac{\gamma}{2R}$
+   \item $\frac{4\gamma}{R}$
+\end{enumerate}
+\end{enumerate}
+\end{document}
