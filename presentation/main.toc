@@ -1,0 +1,8 @@
+\beamer@sectionintoc {2}{Problem}{2}{0}{1}
+\beamer@sectionintoc {3}{Table}{3}{0}{2}
+\beamer@sectionintoc {4}{Solution}{4}{0}{3}
+\beamer@subsectionintoc {4}{1}{Conic Parameters}{4}{0}{3}
+\beamer@subsectionintoc {4}{2}{Theory}{5}{0}{3}
+\beamer@subsectionintoc {4}{3}{Solving}{6}{0}{3}
+\beamer@sectionintoc {5}{Plot}{7}{0}{4}
+\beamer@sectionintoc {6}{code}{8}{0}{5}
